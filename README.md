@@ -35,6 +35,8 @@ Install dev dependencies
 ## Run the Test Cases
 
       npm run cypress -  runs a complete automated test of the workflows.
+      
+      Make sure the local server is running on 3004 before executing  `npm run cypress` , else the tests will fail.
 
 ## Dependencies
 
