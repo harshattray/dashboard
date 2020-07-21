@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2019-04-30T01:34:29+05:30
  * @Last modified by:   harsha
- * @Last modified time: 2019-05-01T23:31:19+05:30
+ * @Last modified time: 2020-07-21T12:41:05+02:00
  */
 
 import React, { Fragment } from "react";
@@ -26,6 +26,7 @@ export const renderInputFields = ({
   label,
   type,
   placeholder,
+  id,
   name,
   pattern,
   meta: { touched, error, warning },
@@ -33,7 +34,13 @@ export const renderInputFields = ({
 }) => {
   return (
     <Fragment>
-      <Input type={type} label={label} placeholder={placeholder} {...input} />
+      <Input
+        type={type}
+        id={id}
+        label={label}
+        placeholder={placeholder}
+        {...input}
+      />
       <div>{touched && error && <i>{error}</i>}</div>
     </Fragment>
   );

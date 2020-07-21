@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2020-07-21T07:22:03+02:00
  * @Last modified by:   harsha
- * @Last modified time: 2020-07-21T11:20:52+02:00
+ * @Last modified time: 2020-07-21T14:26:04+02:00
  */
 
 import React, { Fragment, Component } from "react";
@@ -62,7 +62,7 @@ const RenderedListComponent = props => {
                   />
                 )}
               </Step>
-              <p>Vormontage</p>
+              <div className="progress-step">Vormontage</div>
               <Step transition="scale">
                 {({ accomplished }) => (
                   <img
@@ -72,7 +72,7 @@ const RenderedListComponent = props => {
                   />
                 )}
               </Step>
-              <p className="status-text">Endmontage</p>
+              <div className="progress-step">Endmontage</div>
               <Step transition="scale">
                 {({ accomplished }) => (
                   <img
@@ -82,10 +82,14 @@ const RenderedListComponent = props => {
                   />
                 )}
               </Step>
-              <p>Inbetriebnahme</p>
+              <div className="progress-step">Inbetriebnahme</div>
             </ProgressBar>
             <Link to="/list/details">
-              <div className="goto-next" onClick={() => setEntityData(item)}>
+              <div
+                className="goto-next"
+                data-cy-view-details={item.serial_no}
+                onClick={() => setEntityData(item)}
+              >
                 <Icon name="arrow circle right" size="big" />
               </div>
             </Link>
