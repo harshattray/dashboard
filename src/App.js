@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/**
+ * @Author: harsha
+ * @Date:   2020-07-20T09:26:47+02:00
+ * @Last modified by:   harsha
+ * @Last modified time: 2020-07-21T11:21:53+02:00
+ */
+
+import React, { Fragment } from "react";
+import { Header } from "semantic-ui-react";
+import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import LoginViewComponent from "./components/LoginViewComponent/LoginViewComponent";
+import ListViewComponent from "./components/ListViewComponent/ListViewComponent";
+import ListDetailsComponent from "./components/ListDetailsComponent/ListDetailsComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header textAlign="center">
+        <Header.Content> ZKSystems </Header.Content>
+      </Header>
+      <Router>
+        <Route exact path="/" component={LoginViewComponent} />
+        <Route exact path="/list" component={ListViewComponent} />
+        <Route exact path="/list/details" component={ListDetailsComponent} />
+      </Router>
+    </Fragment>
   );
 }
 
