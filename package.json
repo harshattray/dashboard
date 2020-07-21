@@ -27,7 +27,8 @@
     "prod": "npm install --dev && npm run build",
     "build": "webpack --config webpack.prod.js",
     "test": "jest --coverage",
-    "test:watch": "NODE_ENV=test jest --watchAll"
+    "test:watch": "NODE_ENV=test jest --watchAll",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -59,6 +60,7 @@
     "clean-webpack-plugin": "^2.0.1",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.0",
+    "cypress": "^4.10.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.4",

@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2020-07-21T06:13:32+02:00
  * @Last modified by:   harsha
- * @Last modified time: 2020-07-21T06:32:04+02:00
+ * @Last modified time: 2020-07-21T14:19:50+02:00
  */
 import React, { Fragment, Component } from "react";
 import { bindActionCreators } from "redux";
@@ -10,6 +10,7 @@ import { connect } from "react-redux";
 import { Grid, Segment, Icon } from "semantic-ui-react";
 import { setLoginForm } from "../../actions/loginFormActions";
 import { Link } from "react-router-dom";
+import { Badge } from "antd";
 
 export class ProfileSelectorComponent extends Component {
   render() {

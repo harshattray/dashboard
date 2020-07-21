@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2019-04-17T23:57:06+05:30
  * @Last modified by:   harsha
- * @Last modified time: 2020-07-21T07:17:10+02:00
+ * @Last modified time: 2020-07-21T12:59:54+02:00
  */
 
 import React, { Fragment, Component } from "react";
@@ -39,6 +39,7 @@ class InputComponent extends Component {
           <div className="login-label">Standort</div>
           <Field
             className="input-values"
+            id="username"
             name="Username"
             component={renderInputFields}
             placeholder="Oldenburg"
@@ -51,22 +52,24 @@ class InputComponent extends Component {
           <Field
             className="input-values"
             name="password"
+            id="password"
             component={renderInputFields}
             placeholder="Enter your Passwort"
             type="password"
             required
           />
         </div>
-        <Link to="/list">
-          <Button
-            className="search-button"
-            disabled={invalid}
-            loading={submitting}
-          >
+        <Button
+          className="search-button"
+          data-cy-login-button
+          disabled={invalid}
+          loading={submitting}
+        >
+          <Link to="/list">
             {selectedLoginForm == "tester" && <p>Tester Anmelden</p>}
             {selectedLoginForm == "worker" && <p>Worker Anmelden</p>}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </form>
     );
   }

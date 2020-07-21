@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2020-07-21T07:26:41+02:00
  * @Last modified by:   harsha
- * @Last modified time: 2020-07-21T10:52:01+02:00
+ * @Last modified time: 2020-07-21T14:28:22+02:00
  */
 import styled from "styled-components";
 
@@ -42,5 +42,8 @@ export default styled.div`
   }
   .load-more {
     text-align: center;
+  }
+  .progress-step {
+    margin-top: 60px;
   }
 `;

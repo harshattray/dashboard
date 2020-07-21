@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2020-07-21T11:23:34+02:00
  * @Last modified by:   harsha
- * @Last modified time: 2020-07-21T12:13:51+02:00
+ * @Last modified time: 2020-07-21T15:01:51+02:00
  */
 import styled from "styled-components";
 
@@ -46,5 +46,8 @@ export default styled.div`
   .details-button {
     background-color: purple;
     color: white;
+  }
+  .progress-step {
+    margin-top: 50px;
   }
 `;
