@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## DynamicForms
 
-## Available Scripts
+## Basic Overview
 
-In the project directory, you can run:
+Built with react, redux , webpack integration with babel loaders processing custom css and js modules and transpiling them.
 
-### `yarn start`
+Redux dev tools are still enabled in this, mapped to the store so that dispached actions can be tracked (install redux dev tools plugin [here](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en))
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation Instructions
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+=========================
 
-### `yarn test`
+## Initial Project Setup
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project Initialisation involves standard procedures listed below
 
-### `yarn build`
+Clone the repo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+      git clone https://github.com/harshattray/dashboard.git
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Install npm modules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+      npm install --save
 
-### `yarn eject`
+Install dev dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+      npm install --save-dev
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+      npm start - fires up the webpack dev server with hot module replacement on port 3004
+      npm run build - runs the production setup with a clean purge
+      npm run  deploy - runs build and commit deploy, creates a githubpages branch and deploys to github pages (make sure all your api calls are https)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Run the Test Cases
 
-## Learn More
+      npm run cypress -  runs a complete automated test of the workflows.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [react](https://github.com/facebook/react): 16.0.0
+- [redux](https://github.com/reduxjs/redux) : 3.7.2
+- [react-redux](https://github.com/reduxjs/redux) : 5.0.6
+- [redux-form](https://github.com/erikras/redux-form) : ^7.4.2
+- [redux-thunk](https://github.com/reduxjs/redux-thunk) : 2.2.0
+- [semantic-ui-react](https://github.com/Semantic-Org/Semantic-UI-React) :^0.82.5
+- [webpack](https://github.com/webpack/webpack) : 3.5.6
+- [enzyme](https://github.com/airbnb/enzyme) : ^3.6.0
+- [jest](https://github.com/facebook/jest) : ^23.6.0
