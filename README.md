@@ -38,12 +38,10 @@ Install dev dependencies
 
 ## Dependencies
 
-- [react](https://github.com/facebook/react): 16.0.0
-- [redux](https://github.com/reduxjs/redux) : 3.7.2
-- [react-redux](https://github.com/reduxjs/redux) : 5.0.6
-- [redux-form](https://github.com/erikras/redux-form) : ^7.4.2
-- [redux-thunk](https://github.com/reduxjs/redux-thunk) : 2.2.0
-- [semantic-ui-react](https://github.com/Semantic-Org/Semantic-UI-React) :^0.82.5
-- [webpack](https://github.com/webpack/webpack) : 3.5.6
-- [enzyme](https://github.com/airbnb/enzyme) : ^3.6.0
-- [jest](https://github.com/facebook/jest) : ^23.6.0
+- [react](https://github.com/facebook/react): 16.13.1
+- [redux](https://github.com/reduxjs/redux) : 4.0.5
+- [react-redux](https://github.com/reduxjs/redux) : 7.2.0
+- [redux-form](https://github.com/erikras/redux-form) : ^8.2.0
+- [redux-thunk](https://github.com/reduxjs/redux-thunk) : 2.3.0
+- [semantic-ui-react](https://github.com/Semantic-Org/Semantic-UI-React) :^0.88.2
+- [webpack](https://github.com/webpack/webpack) : 4.30.0
